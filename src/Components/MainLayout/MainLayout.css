@@ -1,0 +1,30 @@
+.MainLayout {
+  height: 100%;
+  box-sizing: border-box; /* fix bug in browsers */
+  display: grid;
+  grid-template-rows: 15% 75% 10%;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.MainLayout > header,
+.MainLayout > footer {
+  grid-column: span 6;
+  margin: 0.5rem;
+}
+.MainLayout > main {
+  grid-column: span 5;
+  margin: 0.5rem;
+}
+.MainLayout > menu {
+  grid-column: span 1;
+  margin: 0.5rem;
+}
+
+.MainLayout,
+.MainLayout > * {
+  border: 3px solid black;
+}
+
+.MainLayout > main > .myInputs {
+  margin-top: 1rem;
+}

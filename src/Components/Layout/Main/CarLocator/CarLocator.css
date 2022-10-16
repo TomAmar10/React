@@ -1,0 +1,12 @@
+.CarLocator {
+  width: 100%;
+}
+
+.allCarsContainer {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
